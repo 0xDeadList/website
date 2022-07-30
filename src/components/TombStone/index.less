@@ -1,0 +1,29 @@
+.stoneWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  line-height: 32px;
+  // .left {
+  //   margin-left: ;
+  // }
+
+  // .right {
+  // }
+
+  .stone {
+    position: relative;
+
+    .count {
+      position: absolute;
+      top: calc(50% - 20px);
+      left: calc(50% - 32px + 10px);
+      width: 64px; // TODO: 地址很多怎么办
+      height: 40px;
+      background-color: #14cccc;
+      padding-top: 5px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}

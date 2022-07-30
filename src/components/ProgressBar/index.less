@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  .item {
+  }
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28px;
+  line-height: 28px;
+  .line {
+    height: 2px;
+    width: 150px;
+    background-color: #14cccc;
+    margin-right: 32px; // same to .wrapper.column-gap
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.before {
+    opacity: 0.5;
+  }
+}

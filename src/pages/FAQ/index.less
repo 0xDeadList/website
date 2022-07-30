@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  // height: 100vh;
+  align-self: center;
+  justify-self: center;
+  max-width: 900px;
+  height: 550px;
+  margin: 300px 0px;
+  border: 5px solid #14cccc;
+  font-size: 36px;
+  line-height: 36px;
+  width: 80%;
+
+  .title {
+    width: 100%;
+    height: 50px;
+    background-color: #14cccc;
+    color: #000;
+    text-align: center;
+  }
+
+  .qaWrapper {
+    margin-top: 20px;
+    padding: 0px 12px;
+    overflow: scroll;
+
+    .question {
+      margin-bottom: 8px;
+    }
+
+    .answer {
+      color: #ffffff;
+    }
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
