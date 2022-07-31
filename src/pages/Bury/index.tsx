@@ -238,7 +238,7 @@ export default function Bury() {
       <div className={styles.formWrapper}>
         <KeyInput
           ref={inputRef}
-          label="private key"
+          label="Private Key"
           // onSubmit={handleSubmitPrivateKey}
         />
         <div className={styles.tipWrapper}>Tips: {UIContent?.tip}</div>

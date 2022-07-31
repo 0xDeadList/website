@@ -17,7 +17,7 @@ export const TipMap: Record<StatusTypeEn, string> = {
     'Public key of this address is *address*. It has been locked. You can bury it but its NFT will NOT minted to your wallet.',
   [StatusTypeEn.LockedBySelf]:
     'Public key of this address is *address*. It has been locked. You can bury it and its NFT will minted to your wallet.',
-  [StatusTypeEn.Buried]: `Address *address* has been buried successfully! Check the https://opensea.io/assets/matic/${nftContractAddress}/*buriedAddr*`,
+  [StatusTypeEn.Buried]: `Address *address* buried successfully! Check your NFT at https://opensea.io/assets/matic/${nftContractAddress}/*buriedAddr*`,
   //https://opensea.io/assets/matic/ + nft合约地址 + / + 被bury的地址的十进制
   // [StatusTypeEn.Loading]: 'loading',
 };
