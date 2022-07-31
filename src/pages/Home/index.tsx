@@ -60,12 +60,12 @@ export default function Home() {
         <div className={styles.description}>
           <StatusDescription
             count={deadCount}
-            description="buried"
+            description="Buried"
             icon={bury}
           />
           <StatusDescription
             count={lockCount}
-            description="locked"
+            description="Locked"
             icon={lock}
           />
         </div>

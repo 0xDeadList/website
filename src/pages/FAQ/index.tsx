@@ -8,7 +8,7 @@ const QAs: IQAProps[] = [
       <span>
         0xDeadList collects the "dead" address with leaked private key. Users
         are able to lock/bury wallet and get a{' '}
-        <a href="https://opensea.io/collection/addressburier-v2">Burier NFT</a>{' '}
+        <a href="https://opensea.io/collection/addressburier-v3">Burier NFT</a>{' '}
         for reporting the leaked private key. Dapps are able to block those
         public accessible wallets with on/off-chain APIs.
       </span>
@@ -32,16 +32,18 @@ const QAs: IQAProps[] = [
     question: 'What is the NFT/SBT collections?',
     answer: (
       <span>
-        <a href="https://opensea.io/collection/addressburier-v2"> Burier NFT</a>
+        <a href="https://opensea.io/collection/addressburier-v3"> Burier NFT</a>
         {' & '}
-        <a href="https://opensea.io/collection/tombstone-v4">Tombstone SBT</a>
+        <a href="https://opensea.io/collection/tombstone-zktgb9g35d">
+          Tombstone SBT
+        </a>
       </span>
     ),
   },
   {
     question: 'What is the contract address?',
     answer: (
-      <a href="https://polygonscan.com/address/0x43d9822b3e9463904130e6d4fa808654a3e7e0eb">
+      <a href="https://polygonscan.com/address/0x59451a98d772f2a53ca2241a884b1703f8c55218">
         {' '}
         Polygon contract
       </a>
@@ -52,7 +54,7 @@ const QAs: IQAProps[] = [
 export default function FAQ() {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>Instructions for use</div>
+      <div className={styles.title}>FAQs</div>
       <div className={styles.qaWrapper}>
         {QAs.map((qa, idx) => (
           <QA

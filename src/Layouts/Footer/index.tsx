@@ -18,7 +18,7 @@ export default function Footer() {
           link="https://github.com/0xDeadList"
         />
       </div>
-      Powered by MetaMail and EthSign
+      Power by MetaMail {'&'} EthSign
     </footer>
   );
 }

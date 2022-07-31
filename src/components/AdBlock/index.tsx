@@ -13,8 +13,10 @@ export default function AdBlock({ img, title, description }: IAdBlockProps) {
         src={img}
         className={styles.img}
       />
-      <div className={styles.title}>{title}</div>
-      <div className={styles.description}>{description}</div>
+      <div className={styles.content}>
+        <div className={styles.title}>{title}</div>
+        <div className={styles.description}>{description}</div>
+      </div>
     </div>
   );
 }

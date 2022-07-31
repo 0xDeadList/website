@@ -14,7 +14,7 @@ export default function StatusDescription({
   return (
     <div className={styles.wrapper}>
       <span className={styles.count}>{count ?? '-'}</span>
-      <span className={styles.detail}> address {description}.</span>
+      <span className={styles.detail}> {description}</span>
       <img
         src={icon}
         className={styles.icon}
