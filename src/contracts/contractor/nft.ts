@@ -2,10 +2,10 @@ import { ethers } from 'ethers';
 import contractABI from '../abi/nft.json';
 import { nftContractAddress } from './constants';
 
-const provider = new ethers.providers.Web3Provider(window.ethereum);
+const provider = window.ethereum
+  ? new ethers.providers.Web3Provider(window.ethereum)
+  : null;
 
-export const nftContract = new ethers.Contract(
-  nftContractAddress,
-  contractABI,
-  provider.getSigner(),
-);
+export const nftContract = provider
+  ? new ethers.Contract(nftContractAddress, contractABI, provider.getSigner())
+  : null;
