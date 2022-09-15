@@ -26,7 +26,9 @@ function ConnectButton(
 
   const handleConnectWallet = () => {
     getAddressByMetaMask()
-      .then(addr => setAddress(addr))
+      .then(addr => {
+        setAddress(addr as string);
+      })
       .catch(error => {
         notification.error({
           message: 'Failed connect to MetaMask',

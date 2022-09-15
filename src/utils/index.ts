@@ -5,9 +5,9 @@ const PolygonChainId = 137; // Polygon Mainnet
 const hexPolygonChainId = ethers.utils.hexValue(PolygonChainId);
 
 export const getAddressByMetaMask = async () => {
-  try {
+  return new Promise((resolve, reject) => {
     if (!ethereum) {
-      throw new Error('Your client does not support Ethereum');
+      return reject(Error('Your client does not support Ethereum'));
     }
 
     const handleConnect = async () => {
@@ -19,7 +19,7 @@ export const getAddressByMetaMask = async () => {
 
       if (!newAddr) return;
 
-      return newAddr;
+      return resolve(newAddr);
     };
 
     if (window.ethereum.networkVersion !== PolygonChainId) {
@@ -53,9 +53,7 @@ export const getAddressByMetaMask = async () => {
     } else {
       handleConnect();
     }
-  } catch (error: any) {
-    throw error;
-  }
+  });
 };
 
 export const checkConnection = async () => {

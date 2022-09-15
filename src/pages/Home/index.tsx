@@ -23,11 +23,11 @@ export default function Home() {
       )
         .then(res => res.text())
         .then(data => {
-          // 三行分别是：更新到的blocknumber，total dead, total locked
+          // 三行分别是：更新到的blocknumber, total locked，total dead
           const counts = data.split('\n');
 
-          setDeadCount(counts?.[1]);
-          setLockCount(counts?.[2]);
+          setLockCount(counts?.[1]);
+          setDeadCount(counts?.[2]);
         });
     } catch (err) {
       console.error('Can NOT fetch data from 0xDeadList.', err);
