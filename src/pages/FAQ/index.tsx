@@ -6,11 +6,11 @@ const QAs: IQAProps[] = [
     question: 'What is 0xDeadList?',
     answer: (
       <span>
-        0xDeadList collects the "dead" address with leaked private key. Users
-        are able to lock/bury wallet and get a{' '}
+        0xDeadList collects the "dead" address with the leaked private key.
+        Users are able to lock/bury a wallet and get a{' '}
         <a href="https://opensea.io/collection/addressburier-v3">Burier NFT</a>{' '}
         for reporting the leaked private key. Dapps are able to block those
-        public accessible wallets with on/off-chain APIs.
+        publicly accessible wallets with on/off-chain APIs.
       </span>
     ),
   },
@@ -20,16 +20,16 @@ const QAs: IQAProps[] = [
       'You will get a NFT after successfully burying an address. If your private key is leaked, you should also lock and bury it to avoid malicious exploitation.',
   },
   {
-    question: 'Why should lock address before bury?',
+    question: 'Why should I lock address before bury?',
     answer:
-      'To enable users lock address before revealing private key. This also prevents the front-run.',
+      'To enable users to lock an address before revealing the private key. Locking also prevents the front-run.',
   },
   {
     question: ' Is the code open-source?',
     answer: <a href="https://github.com/0xDeadList/0xDeadList"> GitHub</a>,
   },
   {
-    question: 'What is the NFT/SBT collections?',
+    question: 'What are the NFT/SBT collections?',
     answer: (
       <span>
         <a href="https://opensea.io/collection/addressburier-v3"> Burier NFT</a>
