@@ -10,12 +10,12 @@ export const AdBlocksConfig = [
     img: lockGif,
     title: 'Lock Address',
     description:
-      'Lock address temporarily without revealing private key. Dapps are able to block locked address to avoid malicious exploitation.',
+      'Lock the address temporarily without revealing the private key. Dapps are able to block locked addresses to avoid malicious exploitation.',
   },
   {
     img: buryGif,
     title: 'Bury And Earn NFTs',
     description:
-      'Get NFT when successfully post dead address. The program will reward whoever holds Burrier NFT according the value of dead address.',
+      'Get NFT when successfully posting dead addresses. The program will reward whoever holds Burrier NFT according to the value of the dead address.',
   },
 ];

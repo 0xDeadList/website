@@ -214,6 +214,8 @@ export default function Bury() {
       case ButtonTypeEn.Bury:
         handleBury();
         break;
+      case ButtonTypeEn.Buried:
+        goHome();
       default:
         break;
     }
